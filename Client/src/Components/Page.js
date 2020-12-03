@@ -39,7 +39,6 @@ handler(){
                     this.setState({
                         emoji:this.unicodeToChar(res.data.emoji)
                     })
-                    console.log(res)
                 })
                 .catch(error=>{
                     console.log(error)
@@ -79,7 +78,7 @@ render() {
                 </Row>
                 <Row>
                     <Col>
-                        <Button variant="outline-primary" onClick={this.handler}>Find Sugested emoji</Button>
+                        <Button variant="outline-primary" onClick={this.handler}>Find suggested emoji</Button>
                     </Col>
                 </Row>
                 <Row>
